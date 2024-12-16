@@ -1,8 +1,13 @@
 package com.usermanagement.model;
 
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Pattern;
+
 public class User {
 
-
+    private static int LastID = 1;
     private int id;
     private String userName;
     private String password;
@@ -14,14 +19,12 @@ public class User {
     private String status;
 
     public User() {
+        this.id = LastID++;
     }
 
-    public User(int id) {
-        this.id = id;
-    }
 
-    public User(int id, String userName, String password, String email, String fullName, String mobileNumber, String role, String gender, String status) {
-        this.id = id;
+    public User(String userName, String password, String email, String fullName, String mobileNumber, String role, String gender, String status) {
+        this.id = LastID++;
         this.userName = userName;
         this.password = password;
         this.email = email;
@@ -30,6 +33,10 @@ public class User {
         this.role = role;
         this.gender = gender;
         this.status = status;
+    }
+
+    public static int getLastID() {
+        return LastID;
     }
 
     public int getId() {
@@ -102,20 +109,5 @@ public class User {
 
     public void setStatus(String status) {
         this.status = status;
-    }
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", userName='" + userName + '\'' +
-                ", password='" + password + '\'' +
-                ", email='" + email + '\'' +
-                ", fullName='" + fullName + '\'' +
-                ", mobileNumber='" + mobileNumber + '\'' +
-                ", role='" + role + '\'' +
-                ", gender='" + gender + '\'' +
-                ", status='" + status + '\'' +
-                '}';
     }
 }

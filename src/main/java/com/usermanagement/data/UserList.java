@@ -2,21 +2,30 @@ package com.usermanagement.data;
 
 import com.usermanagement.model.User;
 
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.List;
 
 public class UserList {
 
-    List<User> UserList = Arrays.asList(
+    private static List<User> users = new ArrayList<>(
+            List.of(
+                    new User("Ahmed", "password123", "Ahmed@example.com",
+                            "Ahmed Elsigeny", "1234567890", "Admin", "Male", "Active"),
 
-            new User(1, "john_doe", "password123", "john.doe@example.com",
-                    "John Doe", "1234567890", "Admin", "Male", "Active"),
+                    new User("Mahmoud", "securePass!@#", "Mahmoud@example.com",
+                            "Mahmoud Khalad", "0987654321", "User", "Male", "Inactive"),
 
-            new User(2, "jane_doe", "securePass!@#", "jane.doe@example.com",
-                    "Jane Doe", "0987654321", "User", "Female", "Inactive"),
+                    new User("Shahd", "alexPass2024", "shahd@example.com",
+                            "Shahd AbdelNaby", "5678901234", "Moderator", "Female", "Pending"),
 
-            new User(3, "alex_smith", "alexPass2024", "alex.smith@example.com",
-                    "Alex Smith", "5678901234", "Moderator", "Male", "Pending")
-    );
+                     new User("Nada", "alexPass2024", "Nada@example.com",
+                                      "Nada Ezzat", "5678901234", "Moderator", "Female", "Pending")
+            ));
+
+
+    public static List<User> getUsers() {
+        return users;
+    }
+
 
 }

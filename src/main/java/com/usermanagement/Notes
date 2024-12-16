@@ -1,12 +1,22 @@
 
+@Valid on Dto rather than model, why?
+One dto or more
 
 1- ResApi
-        URl, Swagger, Headers
+        URl,  -->Nada
+        Headers -->Nada
+        Swagger, -->Ahmed and adding user
 
-2- Spring Test
+2- Spring Test  -->Mahmoud
         Postman Collections ,
 
-3- Spring Validation
+3- Spring Validation  -->Shahd and update user
 
-4-Spring Securty(authn)
+4- Spring Securty(authn)  -->Nada
+
+Tomorrow at 10PM  -->for deleting user and get user by id
+general meeting at tuesday at 11PM
+
+
+
 

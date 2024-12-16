@@ -1,16 +1,34 @@
 package com.usermanagement.dto;
 
+import jakarta.validation.constraints.*;
+
 public class UserUpdateDto {
 
+    @NotNull
     private int id;
+
+    @NotNull(message = "You must enter the username")
     private String userName;
+
+    @NotNull(message = "You must enter the password")
+    @Pattern(regexp = "^[A-Za-z]+\\d{2}$", message = "Password must contain letters in begin and two digits in end")
     private String password;
+
+    @NotNull(message = "You must enter your email")
+    @Email(message = "Your mail not valid")
     private String email;
-    //private String fullName;
+
+    @NotNull(message = "You must enter your phone number")
+    @Pattern(regexp = "^\\d{11}$",message = "The phone number not correct")
     private String mobileNumber;
+
+    @NotNull(message = "You must enter your phone number")
     private String role;
-    // private String gender;
+
+    @NotNull(message = "You must enter your status")
     private String status;
+
+
     public UserUpdateDto() {
     }
 
