@@ -1,5 +1,6 @@
 package com.usermanagement.dto;
 
+import com.usermanagement.lib.Status;
 import jakarta.validation.constraints.*;
 
 public class UserUpdateDto {
@@ -26,13 +27,13 @@ public class UserUpdateDto {
     private String role;
 
     @NotNull(message = "You must enter your status")
-    private String status;
+    private Status status;
 
 
     public UserUpdateDto() {
     }
 
-    public UserUpdateDto(int id, String userName, String password, String email, String mobileNumber, String role, String status) {
+    public UserUpdateDto(int id, String userName, String password, String email, String mobileNumber, String role, Status status) {
         this.id = id;
         this.userName = userName;
         this.password = password;
@@ -90,11 +91,11 @@ public class UserUpdateDto {
         this.role = role;
     }
 
-    public String getStatus() {
+    public Status getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(Status status) {
         this.status = status;
     }
 }

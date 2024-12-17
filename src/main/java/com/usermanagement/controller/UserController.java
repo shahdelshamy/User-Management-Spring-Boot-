@@ -2,6 +2,7 @@ package com.usermanagement.controller;
 
 import com.usermanagement.dto.UserDto;
 import com.usermanagement.dto.UserUpdateDto;
+import com.usermanagement.lib.Status;
 import com.usermanagement.model.User;
 import com.usermanagement.service.UserService;
 import jakarta.validation.Valid;
@@ -49,6 +50,28 @@ public class UserController {
     public ResponseEntity<String> deleteUser(@PathVariable int id){
         return ResponseEntity.ok(userService.deleteUserById(id));
     }
+
+    //
+    @PutMapping("/status/{id}")
+    public ResponseEntity<String> changeStatusUser(@PathVariable int id, @RequestParam Status status){
+        return ResponseEntity.ok(userService.changeUserStatus(id, status));
+    }
+
+    @GetMapping("/byrole")
+    public ResponseEntity<List<User>> getAllUsersByRole(@RequestParam String role){
+        return ResponseEntity.ok(userService.getUsersByRole(role));
+    }
+
+    @GetMapping("/bygender")
+    public ResponseEntity<List<User>> getAllUsersByGender(@RequestParam String gender){
+        return ResponseEntity.ok(userService.getUsersByGender(gender));
+    }
+
+    @GetMapping("/bystatus")
+    public ResponseEntity<List<User>> getAllUsersByStatus(@RequestParam Status status){
+        return ResponseEntity.ok(userService.getUsersByStatus(status));
+    }
+
 
 
 }

@@ -1,9 +1,6 @@
 package com.usermanagement.model;
 
-import jakarta.validation.Valid;
-import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Pattern;
+import com.usermanagement.lib.Status;
 
 public class User {
 
@@ -16,14 +13,14 @@ public class User {
     private String mobileNumber;
     private String role;
     private String gender;
-    private String status;
+    private Status status;
 
     public User() {
         this.id = LastID++;
     }
 
 
-    public User(String userName, String password, String email, String fullName, String mobileNumber, String role, String gender, String status) {
+    public User(String userName, String password, String email, String fullName, String mobileNumber, String role, String gender, Status status) {
         this.id = LastID++;
         this.userName = userName;
         this.password = password;
@@ -103,11 +100,11 @@ public class User {
         this.gender = gender;
     }
 
-    public String getStatus() {
+    public Status getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(Status status) {
         this.status = status;
     }
 }
