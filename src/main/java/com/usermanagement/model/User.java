@@ -1,6 +1,6 @@
 package com.usermanagement.model;
 
-import com.usermanagement.lib.Status;
+import com.usermanagement.enums.Status;
 
 public class User {
 

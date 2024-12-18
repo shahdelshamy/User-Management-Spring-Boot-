@@ -1,4 +1,4 @@
-package com.usermanagement.lib;
+package com.usermanagement.enums;
 
 public enum Status {
     Active,

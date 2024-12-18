@@ -1,6 +1,6 @@
 package com.usermanagement.data;
 
-import com.usermanagement.lib.Status;
+import com.usermanagement.enums.Status;
 import com.usermanagement.model.User;
 
 import java.util.ArrayList;

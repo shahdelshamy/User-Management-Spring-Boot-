@@ -4,10 +4,11 @@ package com.usermanagement.service;
 import com.usermanagement.data.UserList;
 import com.usermanagement.dto.UserDto;
 import com.usermanagement.dto.UserUpdateDto;
-import com.usermanagement.lib.Status;
+import com.usermanagement.enums.Status;
 import com.usermanagement.mapper.UserMapper;
 import com.usermanagement.model.User;
 // import jakarta.validation.Valid;
+import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -21,6 +22,19 @@ public class UserServiceImp implements UserService {
 
     @Autowired
     private UserMapper userMapper;
+
+
+    @PostConstruct
+    public void init() {
+        System.out.println("Initializing user list...");
+        UserList.getUsers();
+        /*
+        for (User user : UserList.getUsers()) {
+            System.out.println("Loaded user: " + user.getUserName());
+        }
+         */
+    }
+
 
     @Override public User addUser(UserDto userDto) {
 
@@ -45,7 +59,6 @@ public class UserServiceImp implements UserService {
 
     @Override
     public List<User> getAllUsers() {
-
         return UserList.getUsers();
     }
 

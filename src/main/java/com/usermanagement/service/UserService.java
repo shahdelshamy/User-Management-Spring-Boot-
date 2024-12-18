@@ -2,7 +2,7 @@ package com.usermanagement.service;
 
 import com.usermanagement.dto.UserDto;
 import com.usermanagement.dto.UserUpdateDto;
-import com.usermanagement.lib.Status;
+import com.usermanagement.enums.Status;
 import com.usermanagement.model.User;
 
 import java.util.List;
