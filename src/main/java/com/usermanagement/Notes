@@ -1,22 +1,31 @@
 
-@Valid on Dto rather than model, why?
-One dto or more
+- @Valid on Dto rather than model, why?
+- When to create a new dto and why more then one, why not to use
+        example: @Mapping(target = "id", ignore = true)
 
-1- ResApi
-        URl,  -->Nada
-        Headers -->Nada
-        Swagger, -->Ahmed and adding user
+1- RestApi --> Mahmoud & Shahd & Ahmed
+        what's Details URl,Methods,Path URL , -->
+        Headers Componant -->
+        StatesCode
+        Defrance betwen requstParam & PathVarible ,RequstBody Quary
+        when to use each
 
-2- Spring Test  -->Mahmoud
-        Postman Collections ,
+        Swagger, --> Ahmed and adding user
 
-3- Spring Validation  -->Shahd and update user
 
-4- Spring Securty(authn)  -->Nada
 
-Tomorrow at 10PM  -->for deleting user and get user by id
-general meeting at tuesday at 11PM
+2- Spring Test  --> Mahmoud Get All Uesre , Get By ID , Delete Users By id
+       Unit , JUnit , Automation Test
 
+3- Spring Validation  --> Ahmed @Vaild @Custum Validation
+
+4- Spring Securty(authn) --> Shahd & Ahmed & Mahmoud
+    Shahd and update user
+
+5- Git Github
+        Pull Request
+
+Tomorrow at 5PM  --> for Meeting with ZagSystem
 
 
 

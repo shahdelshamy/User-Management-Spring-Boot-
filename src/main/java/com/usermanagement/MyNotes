@@ -1,0 +1,140 @@
+
+1. Rest API
+
+   - API (Application Programming Interface):
+     is a set of rules and protocols that allows different software
+     applications to communicate and exchange data with each other.
+     It acts as a bridge between two applications, enabling them to
+     interact and share information seamlessly.
+     Examples of APIs in everyday life:
+     - Social media APIs: Allow third-party apps to access and share
+       content from platforms like Facebook, Twitter, and Instagram.
+     - Payment APIs: Facilitate online transactions by connecting
+       e-commerce websites with payment gateways.
+     - Weather APIs: Provide real-time weather information to weather
+       apps and websites.
+     - Mapping APIs: Power navigation apps and mapping services by
+       providing geographic data.
+     In essence, APIs are the backbone of modern software development,
+     enabling seamless communication and data exchange between different
+     applications.
+
+   - REST API, or RESTful API:
+     is a type of web API that follows the principles of
+     Representational State Transfer (REST). It's a popular and widely
+     used architectural style for building web services that interact
+     with web applications.
+     Key characteristics of REST APIs:
+     - Stateless: Each request from a client to a server is independent,
+       meaning the server doesn't store any information about the client's
+       previous requests.
+     - Client-Server Architecture: Clear separation between the client
+       (e.g., a web browser, mobile app) and the server.
+     - Uniform Interface: Uses standard HTTP methods (GET, POST, PUT, DELETE)
+       for different operations on resources.
+     - Cacheable: Responses can be cached to improve performance and reduce
+       server load.
+     - Layered System: Multiple layers can be added between the client and
+       server for additional functionality (e.g., load balancing, security).
+     How REST APIs work:
+     1.Client sends a request: The client sends an HTTP request to a specific
+       URL (endpoint) on the server.
+     2.Server processes the request: The server receives the request,
+       processes it, and generates a response.
+     3.Server sends a response: The server sends an HTTP response back to the
+       client, which includes the requested data in a specific format
+       (e.g., JSON, XML).
+     Why REST APIs are popular:
+     - Simplicity: Easy to understand and implement.
+     - Scalability: Can handle a large number of requests.
+     - Flexibility: Can be used with various programming languages and
+       frameworks.
+     - Performance: Can be optimized for speed and efficiency.
+     REST APIs have become the standard for building modern web applications
+     and services due to their simplicity, flexibility, and scalability.
+
+   - Key Components of a REST API URL:
+     1.Base URL:
+       This is the root URL of the API, typically starting with the protocol
+       (HTTP or HTTPS) and the domain name.
+       Example: https://api.example.com
+     2.Resource Path:
+       This part of the URL specifies the resource that the client wants to
+       access.
+       It's usually a hierarchical path, starting with a forward slash (/).
+       Example: /users, /products, /orders
+     3.Resource Identifier (Optional):
+       If you want to access a specific instance of a resource, you can add an
+       identifier to the path.
+       This is often a unique ID or slug.
+       Example: /users/123, /products/apple-iphone-14
+     4.Query Parameters (Optional):
+       These are used to filter, sort, or paginate the results.
+       They are added to the URL after a question mark (?) and use key-value
+       pairs.
+       Example: /products?category=electronics&price_lte=500
+     Best Practices for REST API URL Design:
+     - Use nouns, not verbs: The URL should represent a resource, not an
+       action.
+     - Use plural nouns: For collections of resources, use plural nouns.
+     - Use HTTP methods for actions: Use HTTP methods like GET, POST, PUT,
+       DELETE to indicate the desired action on the resource.
+     - Keep URLs simple and concise: Avoid overly complex URLs.
+     - Use consistent naming conventions: Use consistent naming conventions
+       for resources and parameters.
+     - Consider versioning: If you need to make significant changes to the
+       API, consider versioning your URLs.
+     By following these best practices, you can create REST APIs that are
+     easy to understand, use, and maintain.
+
+   - Common HTTP Methods and Their Uses:
+     1.GET:
+       Retrieves data from the server.
+       Used for fetching resources.
+       Example: GET /users to retrieve a list of all users.
+     2.POST:
+       Creates a new resource on the server.
+       Used for submitting data to be processed.
+       Example: POST /users to create a new user.
+     3.PUT:
+       Updates an existing resource on the server.
+       Used for modifying existing data.
+       Example: PUT /users/123 to update the user with ID 123.
+     4.DELETE:
+       Deletes a resource from the server.
+       Used for removing data.
+       Example: DELETE /users/123 to delete the user with ID 123.
+     How to Specify the Request Type:
+     The request type is typically specified in the HTTP header of the
+     request. However, most modern tools and libraries handle this
+     automatically.
+
+
+
+2. Testing
+
+   Testing Frameworks: TestNG, JUnit -> Spring Boot
+   Test Driven Development(TDD): Design pattern where you test first and
+     write just enough production code to pass the test.
+   JUnit -> test one component in isolation, Integration -> verify the behavior
+     of a feature which may be multiple components(classes).
+   Testing hierarchy: (Unit -> Integration -> End-to-End -> UI) Tests
+     Unit -> Mokito, JUnit
+     End-to-End -> Postman
+   Spring Boot Test Starter(JUnit, Spring Test, and Spring Boot Test Modules
+     along with most commonly used mocking and asserting libraries):
+     - JUnit -> Java programming language unit test framework
+     - Mockito -> Java mocking framework
+     - AssertJ -> utility methods collection for supporting asserting
+       conditions in tests
+     - Hamcrest -> matcher/predicates library for data assertion
+     - JSONassert -> JSON assertion library
+     - JsonPath -> XPath for JSON
+
+   Unit Testing:
+   BDD(Behavior Driven Development) -> Arrange Act Assert
+
+
+
+
+

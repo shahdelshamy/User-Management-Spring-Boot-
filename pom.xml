@@ -63,6 +63,7 @@
 			<optional>true</optional>
 		</dependency>
 
+		<!-- Starter Test Dependency: Added by Default -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>

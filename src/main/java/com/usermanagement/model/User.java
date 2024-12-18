@@ -1,7 +1,9 @@
 package com.usermanagement.model;
 
 import com.usermanagement.enums.Status;
+import lombok.Builder;
 
+@Builder
 public class User {
 
     private static int LastID = 1;
