@@ -1,0 +1,127 @@
+
+@Valid on Dto rather than model, why?
+One dto or more
+
+1- RestApi --> Mahmoud & Shahd & Ahmed
+        what's Details URl,Methods,Path URL , -->
+        Headers Componant -->
+        StatesCode
+        Defrance betwen requstParam & PathVarible ,RequstBody Quary
+
+        when to use each
+        امتي استخدم كل واحدة منهم
+
+        Swagger, --> Ahmed and adding user
+
+
+2- Spring Test  --> Mahmoud Get All Users , Get By ID , Delete Users By id
+       Unit , JUnit , Automation Test
+
+3- Spring Validation  --> Ahmed @Valid @Custom Validation
+
+4- Spring Securty(authn) --> Shahd & Ahmed & Mahmoud
+    Shahd and update user
+
+5- Git Github[
+        Pull Request
+
+Tomorrow at 5PM  --> for Meeting with ZagSystem
+
+            Ahmed EL-Seginy summary
+
+Spring Validation -->
+ تتأكد إن البيانات اللي بتدخلها في التطبيق صحيحة ومتوافقة مع الشروط اللي انت محددها.
+ الهدف الأساسي منه إنك تحمي التطبيق من الأخطاء أو البيانات الغلط
+
+    Set annotation
+        @NotNull ,@Size ,@Pattern , @Min , @Max , @Email
+        Custom Validators
+
+        ممكن تتحقق من البيانات اللي جاية باستخدام @Valid أو @Validated
+
+        زي Hibernate Validator اللي بيجي Built-in مع Spring.
+
+    turn on validation
+    Result
+
+    BindingResult:
+    هو Object بيشيل الأخطاء اللي حصلت لو البيانات غلط.
+    لازم يتحط مباشرة بعد الـ @Valid عشان يقدر يلقط الأخطاء.
+
+====================================================
+
+                Rest Api
+
+Status Codes
+
+200 (OK): الطلب ناجح والبيانات رجعت.
+201 (Created): بيانات جديدة اتضافت بنجاح.
+400 (Bad Request): الطلب فيه مشكلة (زي بيانات ناقصة).
+401 (Unauthorized): محتاج إذن (Authorization) عشان تدخل.
+404 (Not Found): الحاجة اللي بتدور عليها مش موجودة.
+500 (Internal Server Error): مشكلة في السيرفر نفسه.
+
+Headers Component
+Content-Type: نوع البيانات (زي JSON أو XML).
+Authorization: لو في توكن أو مفتاح أمان.
+Accept: بتحدد نوع البيانات اللي انت متوقعها في الرد.
+Custom Headers: أي معلومات إضافية خاصة بالتطبيق.
+
+Delegation
+
+RequestParam
+بيستخدم عشان تستقبل قيمة موجودة في URL كـ Query Parameters.
+GET https://example.com/api/users?name=ahmed
+
+RequestParam
+
+PathVariable:
+بيستخدم لما تكون القيمة جزء من الـ URL Path.
+
+
+RequestBody:
+لما تبعت بيانات في  ال(Body) بدل الـ URL.
+
+Query Parameters
+شبه الـ RequestParam لكن بيتعامل مع أكتر من قيمة في نفس الوقت.
+
+
+RequestParam: قيم في الـ URL كـ Query Parameters.
+PathVariable: جزء من مسار الـ URL نفسه.
+
+RequestBody: البيانات اللي بتيجي في Body  الطلب.
+Query Parameters: أكتر من قيمة كـ Query في الـ URL
+
+Spring Docs
+    Swagger
+    OpenApi Swagger UI
+
+
+7:05
+
+what's Plugin in maven and Live
+
+     Build Tasks
+1- Build Swagger and Generate project
+         implement Project Structure (Database)
+         Spring doucs (OpenApi)
+         liquebase
+
+1- Make database With application
+2- Swagger plugin before
+
+     We understand its topics
+
+                    Database
+        SQL ,
+        Persistence layer DAO
+          --> JDBC ,JDBC template,
+          --> JPA and hibernate ORM
+                    Spring Data difference
+        liquibase ,h2 databse
+
+                    APIs
+        send meta data in Apis
+        Delegation , headers
+
+    Monday at 9
