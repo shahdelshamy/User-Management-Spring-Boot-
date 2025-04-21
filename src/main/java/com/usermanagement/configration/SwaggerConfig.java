@@ -8,6 +8,7 @@ import org.springdoc.core.models.GroupedOpenApi;
 public class SwaggerConfig {
     @Bean
     public GroupedOpenApi api() {
-        return GroupedOpenApi.builder().group("api").packagesToScan("com.usermanagement").build();
+        return GroupedOpenApi.builder().group("api").
+                packagesToScan("com.usermanagement").build();
     }
 }

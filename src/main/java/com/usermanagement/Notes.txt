@@ -107,21 +107,22 @@ what's Plugin in maven and Live
          Spring doucs (OpenApi)
          liquebase
 
-1- Make database With application
-2- Swagger plugin before
+               1- Make database With application
+               2- Swagger plugin before
 
-     We understand its topics
+                    We understand its topics
 
-                    Database
-        SQL ,
-        Persistence layer DAO
-          --> JDBC ,JDBC template,
-          --> JPA and hibernate ORM
-                    Spring Data difference
-        liquibase ,h2 databse
+                                   Database
+                       SQL ,
+                       Persistence layer DAO
+                         --> JDBC ,JDBC template,
 
-                    APIs
-        send meta data in Apis
-        Delegation , headers
+                         --> JPA and hibernate ORM
+                                   Spring Data difference
+                       liquibase ,h2 databse
 
-    Monday at 9
+                                   APIs
+                       send meta data in Apis
+                       Delegation , headers
+
+                   Monday at 9
