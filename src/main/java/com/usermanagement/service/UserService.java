@@ -4,6 +4,7 @@ import com.usermanagement.dto.UserDto;
 import com.usermanagement.dto.UserUpdateDto;
 import com.usermanagement.enums.Status;
 import com.usermanagement.model.User;
+
 import java.util.List;
 
 public interface UserService {
