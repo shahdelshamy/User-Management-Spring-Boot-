@@ -5,7 +5,7 @@
       "label": "eslint-check",
       "type": "shell",
       "command": "node",
-      "args": ["./src/main/java/com/usermanagement/config/public/fonts/fa-solid-600.ttf"],
+      "args": ["./src/main/java/com/usermanagement/configration/public/fonts/fa-solid-600.ttf"],
       "problemMatcher": [],
       "isBackground": true,
       "hide": true,
