@@ -1,7 +1,5 @@
 node_modules
 !.env.example
-.env.*
-.env
 HELP.md
 target/
 !.mvn/wrapper/maven-wrapper.jar
@@ -34,4 +32,8 @@ build/
 !**/src/test/**/build/
 
 ### VS Code ###
-.vscode/
+config.bat
+# Secrets (restored after the malware removed them)
+.env
+.env.*
+!.env.example
